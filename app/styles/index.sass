@@ -1,0 +1,73 @@
+* 
+  box-sizing: border-box
+
+body
+  height: 100vh
+  margin: 0
+  background-size: cover
+  background-image: url('https://i.ibb.co/WswGLMp/book-store.jpg')
+
+#app 
+  height: 100vh
+  display: flex
+  align-items: center
+  justify-content: center
+  
+.container  
+  width: 70%
+  background: white
+  display: inline-block
+  padding: 50px
+  text-align: center
+  border-radius: 20px
+  
+  h1
+    font-size: 1.5rem
+  
+  .content
+    display: grid
+    grid-template-columns: 1fr 1fr
+    justify-items: start
+    margin: 2rem 0
+
+    .cart, 
+    .item-list
+      width: 100%
+      text-align: left
+      padding: 0 15px
+      
+      .new-btn
+        text-align: right
+        
+      .list
+        margin-bottom: 5px
+
+        .item
+          display: flex
+          padding: 10px 0
+          border-bottom: 0.5px solid rgba(0,0,0,0.5)
+          align-items: center
+
+          .price, 
+          .amount
+            font-style: italic
+            margin-left: auto
+            margin-right: 5px
+
+          .amount
+            font-family: arial
+
+          button
+            width: 25px
+            height: 25px
+            margin-left: 5px
+            display: flex
+            justify-content: center
+        
+  .console
+    width: 100%
+    height: 300px
+    resize: none
+    border: 0
+    
+  

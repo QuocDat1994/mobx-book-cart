@@ -1,0 +1,68 @@
+* {
+  box-sizing: border-box; }
+
+body {
+  height: 100vh;
+  margin: 0;
+  background-size: cover;
+  background-image: url("https://i.ibb.co/WswGLMp/book-store.jpg"); }
+
+#app {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.container {
+  width: 70%;
+  background: white;
+  display: inline-block;
+  padding: 50px;
+  text-align: center;
+  border-radius: 20px; }
+  .container h1 {
+    font-size: 1.5rem; }
+  .container .content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: start;
+    margin: 2rem 0; }
+    .container .content .cart,
+    .container .content .item-list {
+      width: 100%;
+      text-align: left;
+      padding: 0 15px; }
+      .container .content .cart .new-btn,
+      .container .content .item-list .new-btn {
+        text-align: right; }
+      .container .content .cart .list,
+      .container .content .item-list .list {
+        margin-bottom: 5px; }
+        .container .content .cart .list .item,
+        .container .content .item-list .list .item {
+          display: flex;
+          padding: 10px 0;
+          border-bottom: 0.5px solid rgba(0, 0, 0, 0.5);
+          align-items: center; }
+          .container .content .cart .list .item .price,
+          .container .content .cart .list .item .amount,
+          .container .content .item-list .list .item .price,
+          .container .content .item-list .list .item .amount {
+            font-style: italic;
+            margin-left: auto;
+            margin-right: 5px; }
+          .container .content .cart .list .item .amount,
+          .container .content .item-list .list .item .amount {
+            font-family: arial; }
+          .container .content .cart .list .item button,
+          .container .content .item-list .list .item button {
+            width: 25px;
+            height: 25px;
+            margin-left: 5px;
+            display: flex;
+            justify-content: center; }
+  .container .console {
+    width: 100%;
+    height: 300px;
+    resize: none;
+    border: 0; }
